@@ -52,7 +52,7 @@ The app that you’ll be deploying doesn’t do much beyond demonstrating some *
 * It allows admin users to see who has logged in to the app in the past (by storing
   each login in a database), and to see which users have admin credentials.
 
-This app is a full-stack web app with:
+This app is a back-end only web app with:
 * A back-end built in Spring Boot (the code for this is under the directory `./src`, plus the `pom.xml` at the top level
 * OAuth integration; this allows the app to have a "login/logout" feature based on Google Accounts (e.g. your UCSB Google Account)
 * A SQL database, which runs using H2 (an in-memory database) on localhost, and using Postgres when running on Dokku.
@@ -74,9 +74,6 @@ Here is an example of the app you'll be implementing, up and running. Try loggin
 
 
 So, let's get started.
-
-
-TODO: Insert some more details here about what to expect from the running app.
 
 ## Step 1: Create your repo
 
@@ -273,7 +270,7 @@ Where:
 
 You should test the following features:
 
-* You should see be able to login with your UCSB Google account
+* You should be able to login with your UCSB Google account
 * You should see an Admin menu, where you can see the names of everyone that has logged in
 
 ### What if it doesn't work?
