@@ -805,6 +805,8 @@ mvn compile
 jshell --class-path `pwd`/target/classes
 ```
 
+ If <tt>jshell --class-path  &#96;pwd&#96;/target/classes</tt> returns a file not found error, try putting quotes around <tt>&#96;pwd&#96;/target/classes</tt>, making the command <tt>jshell --class-path "`pwd`/target/classes"</tt>.
+
 You should then be able to import the Team class with the command:
 * import edu.ucsb.cs156.spring.hello.*
 
